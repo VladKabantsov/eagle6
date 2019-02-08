@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+    margin: 0;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #6b6a6c;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.entity-data-wrapper {
+    text-align: left;
+    margin: auto 10px;
+}
+
+.entity-name {
+    color: #000;
+    font-weight: 500;
+}
+
+.entity-type {
+    font-size: 10px;
+}

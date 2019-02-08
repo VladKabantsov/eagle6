@@ -1,0 +1,26 @@
+<div class="wrapper">
+  <div class="content">
+    <div class="d-flex">
+      <div class="round-border">
+        <mat-icon (click)="addEntity.emit()" class="plus-icon">add</mat-icon>
+      </div>
+      <div class="entity-title">
+        <div *ngIf="entities.length; else connect" class="dark-text">Entities connected ({{entities.length}})
+          <div *ngIf="show">
+            <div *ngFor="let entity of entities">
+              <div class="entities-wrapper">
+                <div class="entity-name">{{entity.name}}</div>
+                <div class="entity-type">{{entity.type}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ng-template #connect>Connect entity</ng-template>
+      </div>
+      <div (click)="show = !show" *ngIf="entities.length" class="arrow-icon">
+        <mat-icon *ngIf="!show">arrow_drop_down</mat-icon>
+        <mat-icon *ngIf="show">arrow_drop_up</mat-icon>
+      </div>
+    </div>
+  </div>
+</div>

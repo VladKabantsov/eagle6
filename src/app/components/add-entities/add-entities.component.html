@@ -1,0 +1,33 @@
+<div class="wrapper-add-entities">
+  <div class="wrapper-content">
+    2016 KPI:$15M Renewal Revenue (Strategic Goal)
+    <mat-icon (click)="closeAdding.emit()" class="clear-icon">clear</mat-icon>
+    <h1>Add entities</h1>
+    <div class="search-wrapper d-flex">
+      <div class="search-icon">
+        <mat-icon>search</mat-icon>
+      </div>
+      <input type="text" name="search" [formControl]="search" placeholder="Search entity" autofocus>
+      <div class="filter-icon">
+        <mat-icon>filter_list</mat-icon>
+      </div>
+    </div>
+    <div *ngFor="let entity of entitiesList$ | async" class="d-flex entity-wrapper">
+      <mat-checkbox [color]="'primary'"
+                    [checked]="entity.checked"
+                    (change)="selectValue(entity); entity.checked = !entity.checked"
+                    class="checkbox"
+      ></mat-checkbox>
+      <div class="entity-data-wrapper">
+        <div class="entity-name">{{entity.name}}</div>
+        <div class="entity-type">{{entity.type}}</div>
+      </div>
+    </div>
+    <div class="btn-indent">
+      <button type="button"
+              class="connect-btn"
+              (click)="addEntities.emit(selectedElements)"
+      >CONNECT</button>
+    </div>
+  </div>
+</div>

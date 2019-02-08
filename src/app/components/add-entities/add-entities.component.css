@@ -1,0 +1,93 @@
+.wrapper-add-entities {
+    background-color: #FFF;
+}
+
+.wrapper-content {
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+    position: relative;
+}
+
+.clear-icon {
+    position: absolute;
+    right: 0;
+    font-size: 50px;
+    cursor: pointer;
+    color: #c2c2c2;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: #000;
+    margin: 40px 0;
+    font-weight: bold;
+}
+
+input {
+    height: 35px;
+    width: 600px;
+    padding-left: 35px;
+}
+
+input::placeholder {
+    /*padding-left: 40px;*/
+}
+
+.search-icon {
+    margin: auto;
+    margin-right: -37px;
+    z-index: 10;
+}
+
+.filter-icon {
+    margin: auto;
+    margin-left: -35px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.search-wrapper {
+    border: 1px solid #f0f0f0;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.entity-wrapper {
+    padding: 10px 0 10px 14px;
+    border: 1px solid #f0f0f0;
+    height: 35px;
+    width: 624px;
+    margin: 0 auto;
+}
+
+.entity-data-wrapper {
+    text-align: left;
+    margin: auto 10px;
+}
+
+.entity-name {
+    color: #000;
+    font-weight: 500;
+}
+
+.entity-type {
+    font-size: 10px;
+}
+
+.checkbox {
+    margin: auto 0;
+}
+
+.connect-btn {
+    background-color: #4caf50;
+    border: 0;
+    color: #FFF;
+    font-size: 12px;
+    padding: 20px 40px;
+    cursor: pointer;
+}
+
+.btn-indent {
+    margin-top: 50px;
+}

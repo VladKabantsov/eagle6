@@ -1,0 +1,9 @@
+<app-entities *ngIf="showEntity"
+              [entities]="entities"
+              (addEntity)="showEntity = false"
+></app-entities>
+<app-add-entities *ngIf="!showEntity"
+                  (closeAdding)="showEntity = true"
+                  [selectedElements]="entities"
+                  (addEntities)="connectValues($event); this.showEntity = true;"
+></app-add-entities>
